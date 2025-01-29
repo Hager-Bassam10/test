@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Testing Platform</title>
+    <!-- إضافة رابط مكتبة Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ====== Reset Styles ====== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ====== Body Styles ====== */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0e12;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* ====== Header Styles ====== */
+        header {
+            background-color: #0a0e12;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap; /* السماح للعناصر بالتكيف مع الشاشات الصغيرة */
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap; /* السماح للروابط بالانتقال إلى أسطر جديدة في الشاشات الصغيرة */
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .nav-links li {
+            padding: 10px 20px;
+            margin: 5px;
+            color: #0078d4;
+            text-align: center;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            padding: 10px 20px;
+        }
+
+        .nav-links li:hover {
+            background-color: #0056a3;
+            color: #f1f1f1;
+            transform: scale(0.9);
+        }
+
+        .nav-links i {
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        /* ====== Main Container Styles ====== */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 65vh;
+            padding: 0 30px;
+            flex-wrap: wrap; /* السماح بتوزيع المحتويات بشكل مرن */
+            text-align: center;
+        }
+
+        .content {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0bbef0;
+        }
+
+        /* ====== Card Styles ====== */
+        .card-container {
+            position: relative;
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+        }
+
+        .card {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-blue {
+            background-color: #0056d6;
+            top: 25px;
+            left: 25px;
+            transform: rotate(0deg);
+        }
+
+        .card-light-blue {
+            margin-top: 10px;
+            margin-left: 10px;
+            background-color: #0d70c2;
+            transform: rotate(-20deg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            text-align: center;
+            color: #ffffff;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        .card-light-blue p {
+            margin: 0;
+            transform: rotate(20deg);
+        }
+
+        /* ====== Image Styles ====== */
+        .image {
+            position: relative;
+            max-width: 50%;
+            margin-top: 20px;
+        }
+
+        .image img {
+            width: 100%;
+            opacity: 0.2;
+            border-radius: 25px;
+        }
+
+        /* ====== Responsive Styles ====== */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+                padding: 0 15px;
+            }
+
+            header {
+                padding: 20px 10px;
+            }
+
+            .content h1 {
+                font-size: 1.8rem;
+                margin-bottom: 20px;
+                color: #0bbef0;
+            }
+
+            .nav-links li {
+                font-size: 0.9rem;
+                margin: 5px;
+            }
+
+            .card-container {
+                width: 200px;
+                height: 200px;
+                margin-bottom: 30px;
+            }
+
+            .image {
+                max-width: 100%;
+                margin-top: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- ====== Header ====== -->
+    <header>
+        <img class="logo" src="logo.jpg" alt="Logo">
+        <ul class="nav-links">
+            <li><a href="M/Chat.html"><i class="fas fa-comment"></i> Chat</a></li>
+            <li><a href="M/Quiz.html"><i class="fas fa-question-circle"></i> Quiz</a></li>
+            <li><a href="book.html"><i class="fas fa-book"></i> Book</a></li>
+            <li><a href="report.html"><i class="fas fa-chart-line"></i> Report</a></li>
+        </ul>
+    </header>
+
+    <!-- ====== Main Content ====== -->
+    <div class="container">
+        <div class="content">
+            <h1>AI-Powered <br> Testing Platform</h1>
+            <div class="card-container">
+                <div class="card card-blue"></div>
+                <div class="card card-light-blue">
+                    <p>It is a website dedicated to creating and correcting tests using artificial intelligence, offering innovative and efficient solutions to enhance the learning experience.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image">
+            <img src="bg.jpg" alt="Background Image">
+        </div>
+    </div>
+</body>
+</html>
